@@ -1,5 +1,12 @@
 ;; -*- coding: utf-8 -*-
 ;;(defvar best-gc-cons-threshold gc-cons-threshold "Best default gc threshold value. Should't be too big.")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (defvar best-gc-cons-threshold 4000000 "Best default gc threshold value. Should't be too big.")
 ;; don't GC during startup to save time
 (setq gc-cons-threshold most-positive-fixnum)
@@ -114,7 +121,7 @@
   (require 'init-xterm)
   (require 'init-gui-frames)
   (require 'init-ido)
-  (require 'init-dired)
+  ;; (require 'init-dired)
   (require 'init-uniquify)
   (require 'init-ibuffer)
   (require 'init-flymake)
@@ -214,6 +221,9 @@
  '(display-time-mode t)
  '(git-gutter:handled-backends (quote (svn hg git)))
  '(jdee-server-dir "~/.emacs.d/site-lisp/jdee")
+ '(package-selected-packages
+   (quote
+    (yaml-mode yagist writeroom-mode workgroups2 wgrep w3m unfill tidy textile-mode tagedit swiper simple-httpd session scss-mode scratch rvm robe rinari request regex-tool rainbow-delimiters quack pomodoro pointback paredit page-break-lines nvm neotree mwe-log-commands multiple-cursors multi-term move-text markdown-mode lua-mode link less-css-mode legalese js2-mode idomenu ibuffer-vc hydra htmlize hl-sexp haskell-mode haml-mode groovy-mode gitignore-mode gitconfig-mode git-timemachine git-messenger git-link git-gutter ggtags fringe-helper flyspell-lazy flymake-ruby flymake-lua flymake-jslint flymake-css flymake-coffee flx-ido expand-region exec-path-from-shell erlang emmet-mode elpy dsvn diminish dictionary define-word crontab-mode cpputils-cmake connection company-c-headers color-theme coffee-mode cmake-mode cliphist buffer-move bbdb auto-compile ace-window)))
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
  '(session-use-package t nil (session))
  '(show-paren-mode t)

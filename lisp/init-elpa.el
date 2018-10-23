@@ -112,12 +112,14 @@ But you may use safer HTTPS instead.")
     (setq package-archives
           '(;; uncomment below line if you need use GNU ELPA
             ;; ("gnu" . "https://elpa.gnu.org/packages/")
+			("marmalade" . "https://elpa.emacs-china.org/marmalade/")
             ("melpa" . "https://melpa.org/packages/")
             ("melpa-stable" . "https://stable.melpa.org/packages/")
             ))
   (setq package-archives
         '(;; uncomment below line if you need use GNU ELPA
           ;; ("gnu" . "http://elpa.gnu.org/packages/")
+		  ("marmalade" . "http://elpa.emacs-china.org/marmalade/")
           ("melpa" . "http://melpa.org/packages/")
           ("melpa-stable" . "http://stable.melpa.org/packages/")
           ))
@@ -223,7 +225,7 @@ ARCHIVE is the string name of the package archive.")
 (require-package 'haml-mode)
 (require-package 'scss-mode)
 (require-package 'markdown-mode)
-(require-package 'dired+)
+;; (require-package 'dired+)
 (require-package 'link)
 (require-package 'connection)
 (require-package 'dictionary) ; dictionary requires 'link and 'connection
@@ -270,11 +272,11 @@ ARCHIVE is the string name of the package archive.")
 (require-package 'bbdb)
 (require-package 'pomodoro)
 (require-package 'flymake-lua)
-(require-package 'dropdown-list)
+;; (require-package 'dropdown-list)
 ;; rvm-open-gem to get gem's code
 (require-package 'rvm)
 ;; C-x r l to list bookmarks
-(require-package 'bookmark+)
+;; (require-package 'bookmark+)
 (require-package 'multi-term)
 (require-package 'js2-mode)
 (require-package 's)
